@@ -1,0 +1,596 @@
+/*All images found are CC0, found on Pexels.com*/
+@import url('https://fonts.googleapis.com/css?family=Merienda:400,700');
+
+html  {
+  font-size: 18px;
+  font-family: Calibri, san-serif;
+}
+
+body  {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*global tags*/
+h1, h2, h3, h4  {
+  font-family: Merienda, Garamond, serif;
+}
+
+a {
+  text-decoration: none;
+  color: darkgray;
+  transition: font-size .25s, color .25s;
+}
+
+a:hover {
+  font-weight: bold;
+  color: rgb(207, 16, 26);;
+}
+
+/*header elements*/
+#preHeader {
+  display: flex;
+  visibility: hidden;
+  align-items: center;
+  width: 100%;
+  height: 0;
+  background-color: rgba(255,215,0,.98);
+  border-bottom: 2px black dashed;
+  transition: height 1s, visibility 1s;
+  z-index: 11;
+}
+
+#headAdvert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  height: 3rem;
+}
+
+#headAdvert button  {
+  height: 2rem;
+  width: 5rem;
+  font-size: .5rem;
+  padding: 0;
+  margin: 0;
+}
+
+header  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  margin: 0 auto;
+  padding: .75rem 0;
+  z-index: 10;
+  background-color: white;
+  width: 90%;
+  font-size: 1.25rem;
+}
+
+header img {
+  max-height: 4rem;
+  width: 12rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-left: 1rem;
+  font-weight: bold;
+  color: rgb(191,30,46);
+}
+
+ul  {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 .75rem;
+}
+
+@media only screen and (max-width: 1050px)  {
+  header h1 {
+    font-size: 1.65rem;
+    margin: .2rem auto 1.25rem;
+  }
+
+  header img  {
+    width: 10rem;
+  }
+
+  nav ul {
+    width: auto;
+    margin: 1rem auto;
+  }
+}
+
+@media only screen and (max-width: 850px)  {
+  header  {
+    flex-direction: column;
+    height: auto;
+  }
+
+  nav ul  {
+    flex-direction: row;
+  }
+}
+/*main body elements*/
+main  {
+  width: 100%;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 50rem;
+
+}
+
+@media only screen and (max-width: 1050px) {
+  main {
+    min-height: 40rem;
+  }
+}
+
+/*All banner Content*/
+#banner {
+  height: 40rem;
+  max-height: 640px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.banner-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  text-align: center;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  text-align: center;
+  background-color: rgba(255,255,255,.85);
+  width: 60%;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0 0 2rem;
+  border-radius: 15px;
+  border: 3px outset;
+}
+
+.banner-title h1 {
+  font-size: 4rem;
+  margin: .125rem 0;
+  color: white;
+}
+
+.banner-title h2  {
+  font-size: 3rem;
+  margin: 0;
+  color: #CCC;
+}
+
+.sub-banner {
+  height: 10rem;
+
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1050px)  {
+  #banner h1:first-child  {
+    font-size: 2.5rem;
+  }
+
+  #banner h2  {
+    font-size: 1.8rem;
+  }
+
+  .banner-content {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .banner-content {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+  }
+
+  .banner-content p {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/*under-banner content*/
+#register-form, #about-text, #requestForm  {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*index.html elements*/
+#services, #promos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  padding-bottom: 2rem;
+  margin: 2rem auto 1rem;
+  border-bottom: 2px rgb(219, 216, 6) solid;
+}
+
+#services h1, #promos h1  {
+  font-size: 3rem;
+  letter-spacing: 5px;
+  margin: .5rem auto;
+  text-align: center;
+}
+
+#promos h2  {
+  font-size: 1.75rem;
+  letter-spacing: 4px;
+  margin: .25rem auto ;
+  text-align: center;
+}
+
+.section-content  {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.service-content, .promo-content  {
+  width: 30%;
+  min-width: 15rem;
+  max-width: 20rem;
+  min-heigh: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 2;
+  border-radius: 15px;
+}
+
+.service-content img, .promo-content img  {
+  width: 100%;
+  max-width: 23rem;
+  max-height: 16rem;
+  border-radius: 10px;
+  background-color: rgb(224, 187, 18);
+}
+
+.service-content p  {
+  width: 90%;
+}
+
+/*about.html elements*/
+.text-group {
+  text-align: center;
+  margin: 1rem auto 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px black solid;
+  width: 60%;
+}
+
+.text-group:last-child  {
+  margin-bottom: 4rem;
+}
+.text-group p {
+  margin-left: 0.5rem;
+}
+
+@media only screen and (max-width: 1050px)  {
+  #banner {
+    height: 35rem;
+  }
+
+  #services, #promos {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  #services h1, #promos h1  {
+    font-size: 1.64rem;
+  }
+
+  #promos h2  {
+    font-size: 1rem;
+  }
+
+  .section-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-content, .promo-content  {
+    width: 90%;
+    max-width: initial;
+    flex-direction: row;
+    margin: 1rem auto;
+  }
+
+  .service-content img, .promo-content img  {
+    width: 50%;
+  }
+
+  .service-content h3, .promo-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .service-text, .promo-text {
+    margin-left: 2rem;
+    font-size: .8rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .text-group {
+    width: 95%;
+  }
+
+  .service-content img, .promo-content img {
+    display: none;
+  }
+}
+
+/*request form style*/
+#requestForm  {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+#requestForm form {
+  width: 65%;
+}
+
+.request-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 5rem;
+  margin-top: 1.25rem;
+
+}
+
+.request-buttons  {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.radio-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(231, 228, 228);
+  border-radius: 10px;
+  width: 30%;
+  padding: 1rem .25rem;
+}
+
+.form-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.form-buttons button  {
+  padding: .35rem .75rem;
+}
+
+@media only screen and (max-width: 1050px) {
+  #requestForm form {
+    width: 85%;
+  }
+}
+
+/*Register.html Form style*/
+fieldset  {
+  margin-bottom: 1rem;
+  border-color: navy;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 40%;;
+}
+
+form  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#form label  {
+  display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+  margin: 0.5rem 2rem;
+
+}
+
+input {
+  margin-left: .25rem;
+}
+
+button  {
+  padding: .25rem 1rem;
+  background-color: rgb(7, 185, 16);
+  color: rgb(12, 3, 3);
+  width: 7rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  fieldset {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #form label  {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: .3rem auto;
+  }
+
+  #form {
+    flex-direction: column;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  input {
+    padding: .25rem .5rem;
+  }
+}
+/*Footer content*/
+footer {
+  background: url("../images/footer-background2.jpeg");
+  background-position: center 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#footer {
+margin-top: 5%;
+}
+
+.footer-nav, .footer-legal, footer h4 {
+  width: 25%;
+  text-align: center;
+  min-height: 8rem;
+}
+
+footer  div {
+  display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  width: 85%;
+  min-height: 7rem;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+.footer-nav, .footer-legal {
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav ul, .footer-legal ul   {
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  padding-left: 0;
+  margin: .125rem 0;
+  font-size: 1rem;
+}
+
+.footer-nav p, footer h4 {
+  margin: 0;
+}
+
+footer a  {
+  color: white;
+}
+
+footer div a:hover  {
+  color: yellow;
+}
+
+#footAdvert {
+  display: none;
+}
+
+@media only screen and (min-width: 850px) {
+  #footAdvert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2.5rem;
+    min-height: initial;
+    background-color: rgb(19, 16, 4);
+    color: rgb(221, 219, 219);
+    font-size: 16px;
+    border-top: 2px solid black;
+  }
+}
+
+@media only screen and (max-width: 1050px)  {
+  footer  {
+    min-height: 10rem;
+  }
+
+  footer div  {
+    flex-direction: row;
+    min-height: 4rem;
+    font-size: .8rem;
+  }
+
+  .footer-nav ul, .footer-legal ul {
+    font-size: .8rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+
+  footer div  {
+    flex-direction: row;
+    min-height: 4rem;
+    font-size: .7rem;
+  }
+
+  .footer-nav, .footer-legal {
+    width: 40%;
+  }
+
+  .footer-nav ul, .footer-legal ul {
+    font-size: .7rem;
+    width: 100%;
+  }
+
+  #footer h3 {
+    display: none;
+  }
+}

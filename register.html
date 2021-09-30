@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Register Now</title>
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .sub-banner  {
+        background-image: url('./images/about-background3.jpg');
+      }
+    </style>
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html"><img src="./images/logo.png" alt="Foodar Logo"/></a>
+      <h1>Registration</h1>
+    </header>
+    <main>
+      <section class="sub-banner">
+        <span></span>
+      </section>
+      <section id="register-form">
+        <h2>Register</h2>
+        <p>Please fill out the form below:</p><br/>
+        <form method="post">
+          <div id="form">
+            <fieldset>
+              <legend>Log-In Details</legend>
+              <label>First Name: <input required name="firstName"/></label>
+              <label>Last Name: <input required name="lastName"/></label>
+              <label>Email: <input type="email" required name="email"/></label>
+              <label>Password: <input required type="password" name="password"/></label>
+            </fieldset>
+            <fieldset>
+              <legend>Address</legend>
+              <label>Street Address:<input required name="street"/></label>
+              <label>City: <input required name="city"/></label>
+              <label>State: <input required name="state"/></label>
+              <label>Zipcode: <input required name="zipCode"/></label>
+            </fieldset>
+          </div>
+          <div class="form-buttons">
+            <button type="reset" value="reset">Reset</button>
+            <button type="submit">Register</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div id="footer">
+        <nav class="footer-nav">
+          <p>Site Map</p>
+          <ul>
+            <a href="./index.html"><li>Home</li></a>
+            <a href="./about.html"><li>About Foodar</li></a>
+            <a href="./request.html"><li>Request Delivery</li></a>
+            <a href="./register.html"><li>Register Now</li></a>
+          </ul>
+        </nav>
+        <ul class="footer-legal">
+          <li>&copy; 2021 Foodar, Inc.</li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+        </ul>
+        <h3>Enjoy your meal!</h3>
+      </div>
+    </footer>
+  </body>
+</html>

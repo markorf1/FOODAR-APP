@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Request Delivery</title>
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      header {
+        border-bottom: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html"><img src="./images/logo.png" alt="Foodar Logo"/></a>
+      <h1>Request Delivery</h1>
+    </header>
+    <main>
+      <section id="requestForm">
+        <p>Pleas fill out the form below</p>
+        <form id="foodForm" method="post">
+          <div class="request-group">
+            <h3>Name:</h3>
+            <input type="text">
+            <input type="text" required>
+          </div>
+          <div class="request-group">
+            <h3>Email Address:</h3>
+            <input type="email">
+            <input type="email" required>
+          </div>
+          <div class="request-group">
+            <h3>Type of Restaurant:</h3>
+            <div class="request-buttons">
+              <div class="radio-button">
+                  <label for="style">Classic<br>($)</label>
+                  <input class="food-style" type='radio' name="rest-style" value="3"></input>
+              </div>
+              <div class="radio-button">
+                  <label for="style">Premium<br>($$)</label>
+                  <input class="food-style" type='radio' name="rest-style" value="5"></input>
+              </div>
+              <div class="radio-button">
+                  <label for="style">Royal<br>($$$)</label>
+                  <input class="food-style" type='radio' name="rest-style" value="10"></input>
+              </div>
+            </div>
+          </div>
+          <div class="request-group">
+            <h3>Restaurant:</h3>
+            <input type="text"></input>
+            <input type="text" required>
+          </div>
+          <div class="request-group">
+            <h3>Add Tip:</h3>
+            <div class="request-buttons">
+              <div class="radio-button">
+                  <label for="style">10%</label>
+                  <input class="tip-amount" type='radio' name="tip" value=".1"></input>
+              </div>
+              <div class="radio-button">
+                  <label for="style">15%</label>
+                  <input class="tip-amount" type='radio' name="tip" value=".15"></input>
+              </div>
+              <div class="radio-button">
+                  <label for="style">20%</label>
+                  <input class="tip-amount" type='radio' name="tip" value=".2"></input>
+              </div>
+            </div>
+          </div>
+          <div class="request-group">
+            <h3>Promo Code:</h3>
+            <input type="text"></input>
+          </div>
+          <div class="request-group">
+            <h3 style="display: block;">Total: $<span id="totalCost">0</span></h3>
+          </div>
+          <div class="form-buttons">
+            <button onclick="resetForm()" type="reset">Reset</button>
+            <button onclick="calculateTotal()" type="submit">Confirm Request</button>
+          </div>
+          <div id="order-message">
+          </div>
+        </form>
+    </section>
+    </main>
+    <footer>
+      <div id="footer">
+        <nav class="footer-nav">
+          <p>Site Map</p>
+          <ul>
+            <a href="./index.html"><li>Home</li></a>
+            <a href="./about.html"><li>About Foodar</li></a>
+            <a href="./request.html"><li>Request Delivery</li></a>
+            <a href="./register.html"><li>Register Now</li></a>
+          </ul>
+        </nav>
+        <ul class="footer-legal">
+          <li>&copy; 2021 Foodar, Inc.</li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+        </ul>
+        <h3>Enjoy your meal!</h3>
+      </div>
+      <div id="footAdvert">
+        <p>I've done my fair share of research and all images displayed are CC0, courtesy of <a href='https://www.pexels.com/' target='_blank'>Pexels</a>!</p>
+      </div>
+    </footer>
+    <script src="./javascript/calcTotal.js"></script>
+  </html>

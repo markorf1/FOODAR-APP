@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Foodar Food Delivery</title>
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      #banner  {
+        background-image: url('./images/banner-background2.jpg');
+        background-position: 20%;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      form  {flex-direction: row;
+      }
+      button  {margin: 1.5rem;}
+    </style>
+    <script>
+      function openPreHeader() {
+        document.getElementById("preHeader").style.height = "10vh";
+        document.getElementById("preHeader").style.visibility = "visible";
+        document.getElementById("preHeader").style.position = "fixed";
+      }
+      setTimeout(openPreHeader, 5000);
+
+      function closeAdvert() {
+        document.getElementById("preHeader").style.height = "0";
+        document.getElementById("preHeader").style.visibility = "hidden";
+      }
+    </script>
+  </head>
+  <body>
+    <!--Over-Header advertisement banner. Disappears after 10s or upon button click-->
+    <div id="preHeader">
+      <div id="headAdvert">
+        <p>Today's Special Offer: <span id="dailyOffer">Save up to 15% on select Sit-down meals!</span></p>
+        <button id="closeHeader" onclick="closeAdvert()">Close Daily Offer</button>
+      </div>
+    </div>
+    <header>
+        <img src="./images/logo.png" alt="Foodar Logo"/>
+        <nav>
+          <ul>
+            <a href="./about.html"><li>About Foodar</li></a>
+            <a href="./request.html"><li>Request Delivery</li></a>
+            <a href="./register.html"><li>Register Now</li></a>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <section id="banner">
+        <div class="banner-title">
+          <h1>TRY A NEW MEAL TODAY!</h1>
+        </div>
+        <div class="banner-content">
+          <h3>Find a driver near you!</h3>
+          <p>Type in your 5-digit zipcode below and click "Go!" to find a driver near you.</p>
+          <p>(Valid options: Zip Codes for Austin, TX (78701-78730) and Pflugerville, TX (78660-78691)</p>
+          <div>
+            <input id="userZip" type="number" style="width: 8rem;">
+            <input id="cityChecker" type="submit" value="Go!"/>
+            <div id="zipResult"></div>
+          </div>
+        </div>
+      </section>
+      <section id="services">
+        <h1>How It Works!</h1>
+        <div class="section-content">
+          <div class="service-content">
+            <img src="./images/order-online.jpeg" alt="woman ordering online"/>
+            <div class="service-text">
+              <h3>1. Order What You Want</h3>
+              <p>Want your favorite chicken sandwich or italian cuisine but don't want to fight traffick or put down what you're doing? You don't have to do either! Just order what you want and we'll find the closed drive to deliver your meal!</p>
+            </div>
+          </div>
+          <div class="service-content">
+            <img src="./images/food-driver.jpeg" alt="man delivering food"/>
+
+            <div class="service-text">
+              <h3>2. We Find The Driver</h3>
+              <p>Pay directly from the Foodar Delivery App. No need to worry about a cash tip upon delivery; it's all on the app!</p>
+            </div>
+          </div>
+          <div class="service-content">
+            <img src="./images/pay-phone.jpg" alt="man paying by phone"/>
+            <div class="service-text">
+              <h3>3. Your Food is Delivered!</h3>
+              <p>Eat the food you want without having to get dressed up and leave your house!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="promos">
+        <h1>FEATURE RESTAURANTS</h1>
+        <div class="section-content">
+          <div class="promo-content">
+            <img src="./images/fish n chips.jpg" alt="Promo Restaurant 1"/>
+            <div class="promo-text">
+              <h3>Fish & Chips Gallore!</h3>
+              <p>Since 1968, Fish & Chips Gallore! has served the bay area with its palatable array of fried fish and sailor's choice dessert.<br><br>Order today and recieve 15% your total meal and we'll throw in our famous hush puppies as a thank you.</p>
+            </div>
+          </div>
+          <div class="promo-content">
+            <img src="./images/burger n fry.jpg" alt="Promo Restaurant 1"/>
+            <div class="promo-text">
+              <h3>Nunoo's Burger</h3>
+              <p>When you actually, really desire a burger, you order from Nunoo. Unlike the fast food business, we eat our own food and love it.<br><br>Order 2 burgers and get a small fry on us today.</p>
+            </div>
+          </div>
+          <div class="promo-content">
+            <img src="./images/Bakhita's Dessert2.jpg" alt="Promo Restaurant 1"/>
+            <div class="promo-text">
+              <h3>Djorgee's Desserts</h3>
+              <p>Welcome to your favorite part of dinner, lunch, breakfast, brunch, any meal. We know you don't need encouragement from us to eat our desserts. Look at the picture. You know you want it.<br><br>Just for you, we'll knock off 10% to make your wallet feel good too.</p>
+            </div>
+          </div>
+        </div>
+        <a href="" class="go-top"><i class="fas fa-arrow-up"></i></a>
+      </section>
+    </main>
+    <footer>
+      <div id="footer">
+        <nav class="footer-nav">
+          <p>Site Map</p>
+          <ul>
+            <a href="./index.html"><li>Home</li></a>
+            <a href="./about.html"><li>About Foodar</li></a>
+            <a href="./request.html"><li>Request Delivery</li></a>
+            <a href="./register.html"><li>Register Now</li></a>
+          </ul>
+        </nav>
+        <div class="footer-legal">
+          <ul>
+            <li>&copy; 2021 Foodar, Inc.</li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+        <h3>Enjoy your meal!</h3>
+      </div>
+      <div id="footAdvert">
+        <p>This site belongs to the web porfolio of Margaret Djorgee and is based on Foodar100 RevaturePro project. See "About Foodar" for more information.</p>
+      </div>
+    </footer>
+    <script src="./javascript/index.js"></script>
+  </body>
+</html>
